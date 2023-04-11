@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_multiplicar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pajaro"
+    tools:context=".MultiplicacionActivity">
+
+    <EditText
+        android:id="@+id/etNumero1"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="223dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="61dp"
+        android:hint="Ingrese el primer número"
+        android:inputType="number"
+        android:text="@string/etNumero1"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etNumero2"
+        android:layout_width="245dp"
+        android:layout_height="105dp"
+        android:layout_below="@+id/etNumero1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="47dp"
+        android:hint="Ingrese el segundo número"
+        android:inputType="number"
+        android:text="@string/etNumero2"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnMultiplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNumero2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="46dp"
+        android:backgroundTint="#FF5722"
+        android:backgroundTintMode="src_in"
+        android:text="@string/btnMultiplicar" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="242dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/btnMultiplicar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="38dp"
+        android:text="Resultado"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
